@@ -3,12 +3,10 @@ var sass = require('gulp-sass')(require('sass'));
 var cleanCss = require('gulp-clean-css');
 var rename = require('gulp-rename');
 var terser = require('gulp-terser');
-var gulpSequence = require('gulp-sequence');
 var autoPrefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
 var sourcemaps = require('gulp-sourcemaps');
-var errorHandler = require('gulp-error-handle');
 var inject = require('gulp-inject-string');
 var del = require('del');
 
@@ -38,12 +36,12 @@ gulp.task('css', function () {
 			cascade: false
 		}))
 		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('fyberV3/css'));
+		.pipe(gulp.dest('agency22v1/css'));
 });
 
 //create sourcemaps, compile into one file, minify
 gulp.task('js', function () {
-	del(['fyberV3/js']);
+	del(['agency22v1/js']);
 
 	return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.js', 'app/js/**/*.js','app/components/**/*.js'])
 		.pipe(sourcemaps.init())
@@ -53,7 +51,7 @@ gulp.task('js', function () {
 			suffix:   '.min'
 		}))
 		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('fyberV3/js'));
+		.pipe(gulp.dest('agency22v1/js'));
 });
 
 
@@ -64,7 +62,7 @@ gulp.task('phpPush', function () {
 		.pipe(plumber({
 			errorHandler: onError
 		}))
-		.pipe(gulp.dest('fyberV3'));
+		.pipe(gulp.dest('agency22v1'));
 });
 
 
@@ -72,7 +70,7 @@ gulp.task('PHPHashInject', function () {
 	console.log("\x1b[41m%s\x1b[0m" ,"remember to upload functions.php");
 	return gulp.src('app/functions.php')
 	.pipe(inject.replace('v1.0', 'v=' + myHash))
-	.pipe(gulp.dest('fyberV3'));
+	.pipe(gulp.dest('agency22v1'));
 });
 
 gulp.task('phpPushsvg', function () {
@@ -80,27 +78,27 @@ gulp.task('phpPushsvg', function () {
 		.pipe(plumber({
 			errorHandler: onError
 		}))
-		.pipe(gulp.dest('calderdale/svgs'));
+		.pipe(gulp.dest('agency22v1/svgs'));
 });
 gulp.task('phpPushTemplates', function () {
 	return gulp.src('app/template-parts/*.php')
 		.pipe(plumber({
 			errorHandler: onError
 		}))
-		.pipe(gulp.dest('fyberV3/template-parts'));
+		.pipe(gulp.dest('agency22v1/template-parts'));
 });
 gulp.task('phpPushcomponents', function () {
 	return gulp.src('app/components/**/*.php')
 		.pipe(plumber({
 			errorHandler: onError
 		}))
-		.pipe(gulp.dest('fyberV3/components'));
+		.pipe(gulp.dest('agency22v1/components'));
 });
 
 
 gulp.task('imagePush', function () {
 	return gulp.src('app/images/**/*')
-		.pipe(gulp.dest('fyberV3/images'));
+		.pipe(gulp.dest('agency22v1/images'));
 });
 
 

@@ -1,19 +1,19 @@
 //getting colors from $colors map in _variables.scss
-// $key is the color name e.g. lightBlue and $color is the value e.g. #8CD2F1
+// $key is the color name e.g. aLightBlue and $color is the value e.g. #8CD2F1
 @each $key,
 $color in $colors {
 
-    //creating class names bases on key .lightBlue would be {color:#8CD2F1} 
+    //creating class names bases on key .aLightBlue would be {color:#8CD2F1} 
     .#{$key} {
         color: #{$color};
     }
 
-    //.lightBlue-outline would be {border: .1rem solid #8CD2F1} 
+    //.aLightBlue-outline would be {border: .1rem solid #8CD2F1} 
     .#{$key}-outline {
         border: .1rem solid #{$color}
     }
 
-    //.lightBlue-bg would be {background-color: #8CD2F1} 
+    //.aLightBlue-bg would be {background-color: #8CD2F1} 
     .#{$key}-bg {
         background-color: #{$color};
     }

@@ -1,9 +1,29 @@
 /*colours*/
+/*agency*/
+$aDarkBlue: #163840;
+$aLightBlue: #8CD2F1;
+$aOrange: #F7AE61;
+$aPink: #F5A791;
 
-$darkBlue: #163840;
-$lightBlue: #8CD2F1;
-$orange: #F7AE61;
-$pink: #F5A791;
+/*digital*/
+
+$dBlue: #3DCFF7;
+$dDarkBlue: #122163;
+$dYellow: #FAB935;
+
+/*live*/
+$lPhlox: #CC4DFF;
+
+/*direct*/
+$cRed: #FA0E14;
+$cBlue: #22588A;
+$cBlack: #0D192D;
+
+/*multi*/
+$dPlatinum: #EDECEB;
+
+
+/*other*/
 $white:#fafafa;
 $boxShadow: rgba(0, 0, 0, 0.25);
 $blue: #46B1D3;
@@ -16,9 +36,9 @@ $grey:#7b7b7b;
 $yellow:#F9C71B;
 $trasparent: rgba(0, 0, 0, 0);
 
-$colors:('darkBlue': #163840,
-    'lightBlue': #8CD2F1,
-    'orange': #F7AE61,
+$colors:('aDarkBlue': #163840,
+    'aLightBlue': #8CD2F1,
+    'aOrange': #F7AE61,
     'pink': #F5A791,
     'white':#fafafa,
     'boxShadow': rgba(0, 0, 0, 0.25),

@@ -100,11 +100,11 @@
 			}
 
 			.right-col {
-				border-bottom: solid 2rem $pink;
+				border-bottom: solid 2rem $aPink;
 				background-color: #fafafa;
 
 				@include media-breakpoint-down(md) {
-					border-top: solid 2rem $pink;
+					border-top: solid 2rem $aPink;
 				}
 
 				.date-row {
@@ -114,7 +114,7 @@
 					justify-content: space-between;
 
 					a {
-						color: $pink;
+						color: $aPink;
 						transition: all .3s ease-in-out;
 						text-decoration: underline;
 
@@ -178,7 +178,7 @@
 
 		&:hover {
 			text-decoration: none;
-			color: $pink;
+			color: $aPink;
 
 			.post {
 				img {
@@ -324,7 +324,7 @@
 
 
 			&:hover {
-				color: darken($pink, 20%);
+				color: darken($aPink, 20%);
 			}
 
 			&.wp-block-button__link {
@@ -388,7 +388,7 @@
 			}
 
 			h3 {
-				color: $pink;
+				color: $aPink;
 				margin-bottom: 0;
 			}
 
@@ -400,7 +400,7 @@
 				margin: 0;
 
 				&:hover {
-					color: $pink;
+					color: $aPink;
 					text-decoration: none;
 				}
 			}
@@ -455,7 +455,7 @@
 			}
 
 			a {
-				color: $pink;
+				color: $aPink;
 				transition: all .3s ease-in-out;
 				font-weight: 500;
 
@@ -499,7 +499,7 @@
 			&:hover {
 
 				svg {
-					fill: $pink;
+					fill: $aPink;
 				}
 			}
 		}
@@ -526,7 +526,7 @@
 				&:hover {
 
 					svg {
-						fill: $pink;
+						fill: $aPink;
 					}
 				}
 			}
@@ -540,11 +540,11 @@
 
 
 			span {
-				color: $pink;
+				color: $aPink;
 			}
 
 			&:hover {
-				color: $pink;
+				color: $aPink;
 			}
 		}
 
@@ -561,7 +561,7 @@
 
 			span {
 				opacity: 0;
-				color: $pink;
+				color: $aPink;
 				transition: all .5s ease-in-out;
 				text-decoration: none;
 				margin-left: 2rem;
@@ -575,13 +575,13 @@
 				text-decoration: none;
 
 				path {
-					fill: $pink;
+					fill: $aPink;
 				}
 
 				span {
 					opacity: 1;
 					text-decoration: none;
-					fill: $pink;
+					fill: $aPink;
 
 					@include media-breakpoint-down(lg) {
 						display: none;

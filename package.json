@@ -9,7 +9,8 @@
   "license": "ISC",
   "devDependencies": {
     "del": "^6.0.0",
-    "gulp-autoprefixer": "^8.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-cache-buster": "^0.2.1",
     "gulp-clean-css": "latest",
     "gulp-concat": "latest",
@@ -30,8 +31,11 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "gulp": "^4.0.2",
-    "gulp-inject-string": "^1.1.2"
+    "gulp-inject-string": "^1.1.2",
+    "swiper": "^8.1.0"
   },
-  "description": ""
+  "description": "",
+  "overrides": {
+    "graceful-fs": "^4.2.9"
+  }
 }

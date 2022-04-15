@@ -5,11 +5,11 @@
 */
 @mixin font($fam: false, $size: false, $weight: false, $height: false, $colour: false) {
 	@if $fam==gothic {
-		font-family: all-round-gothic, sans-serif;
+		font-family: 'Poppins', sans-serif;
 	}
 
 	@else if $fam==sofia {
-		font-family: sofia-pro, sans-serif;
+		font-family: 'Poppins', sans-serif;
 	}
 
 	@if $size {

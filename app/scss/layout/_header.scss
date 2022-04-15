@@ -1,5 +1,5 @@
 #header {
-	background-color: $blue;
+	// background-color: $blue;
 	width: 100%;
 	display: block;
 	padding: 2rem 0;
@@ -7,9 +7,8 @@
 	z-index: 10;
 
 	.content {
-
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 
 		.logo {
 			width: 14rem;
@@ -28,7 +27,6 @@
 /* Hide IE banner by default */
 .ie-notice {
 	display: none;
-
 
 	.flex-center {
 		display: flex;
@@ -78,7 +76,7 @@
 				justify-content: center;
 
 				&:hover {
-					box-shadow: 0 0 10px $orange;
+					box-shadow: 0 0 10px $aOrange;
 
 
 					border-radius: 2rem;
@@ -97,11 +95,11 @@
 
 
 					path {
-						fill: $orange;
+						fill: $aOrange;
 					}
 
 					circle {
-						fill: $orange;
+						fill: $aOrange;
 					}
 				}
 			}
@@ -116,7 +114,7 @@
 		}
 
 		h2 {
-			@include font(gothic, 2.2rem, 600, 1.2, $darkBlue);
+			@include font(gothic, 2.2rem, 600, 1.2, $aDarkBlue);
 			margin-bottom: 2rem;
 		}
 

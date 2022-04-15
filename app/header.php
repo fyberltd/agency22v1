@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Template V3 Base</title>
+	<title>Testing - Agency22v1</title>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 	<script>
@@ -18,7 +18,7 @@
 					"button": {
 						"background": "transparent",
 						"text": "#14a7d0",
-						"border": "#14a7d0"
+						"border": "#000"
 					}
 				}
 			})
@@ -36,18 +36,8 @@
 
 		<div class="container content">
 			<a href="<?php echo get_home_url(); ?>" class="logo">
-				<img src="<?php echo bloginfo('template_directory'); ?>/images/logo.png" alt="logo">
+				<img src="<?php echo bloginfo('template_directory'); ?>/images/agency-logo.svg" alt="logo">
 			</a>
-			<div class="mobile-nav-button">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-			<nav class="nav-closed">
-				<img src="<?php echo bloginfo('template_directory'); ?>/images/logo.png" alt="logo">
-
-				<?php wp_nav_menu(array('theme_location' => 'header_nav', 'container_id' => 'header_nav')); ?>
-			</nav>
 		</div>
 	</header>
 	<div class="ie-notice">
