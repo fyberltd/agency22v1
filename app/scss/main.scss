@@ -1,0 +1,48 @@
+/* cd /volumes/fyber/"Fyber Docs"/"Fyber Hosted"/resources/templates/fyber_template_v2_base */
+@charset 'utf-8';
+
+@import 'vendor-extensions/custom';
+
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+@import 'vendors/bootstrap';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/color';
+@import 'base/spacing';
+
+
+@import 'layout/breadcrumbs';
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+@import 'layout/wrapper';
+@import 'layout/global';
+
+@import 'components/buttons';
+@import 'components/cta';
+@import 'components/carousel';
+@import 'components/dropdown';
+@import 'components/heros';
+@import 'components/animations';
+@import 'components/cards';
+@import 'components/article';
+
+@import 'pages/404';
+@import 'pages/blog';
+@import 'pages/contact-us';
+@import 'pages/homepage';
+@import 'pages/login';
+
+
+// @import '../components/testimonials/testimonial';
+// @import '../components/slickslider/carousel';
+// @import '../components/slickslider/slick-theme';
+// @import '../components/slickslider/slick';

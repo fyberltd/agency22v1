@@ -1,0 +1,72 @@
+.wpcf7 {
+    form {
+        p {
+            margin-bottom: 1.5rem;
+
+            label {
+                font-size: $fontsizeBase;
+                display: block;
+            }
+
+            .wpcf7-form-control-wrap {
+                input {
+                    font-size: $fontsizeBase;
+                    border: 0.1rem solid black;
+                    border-radius: .5rem;
+                    display: block;
+                    width: 100%;
+                    margin-top: .5rem;
+                    text-indent: .5rem;
+                    outline: none;
+                }
+
+                textarea {
+                    font-size: $fontsizeBase;
+                    border: 0.1rem solid black;
+                    border-radius: .5rem;
+                    height: 8em;
+                    display: block;
+                    width: 100%;
+                    margin-top: .5rem;
+                    text-indent: .5rem;
+                    outline: none;
+                }
+
+                .wpcf7-not-valid-tip {
+                    font-size: $fontsize5;
+                    color: red;
+                    margin-top: .5rem;
+                }
+            }
+        }
+
+        .submit_btn_row {
+            position: relative;
+            text-align: right;
+
+            input {
+                font-size: $fontsizeBase;
+                padding: 0.5rem 3rem;
+                border-radius: .5rem;
+                border: 0;
+                background-color: yellow;
+                outline: none;
+            }
+
+            .ajax-loader {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                margin: 0 1rem 0 0;
+            }
+        }
+
+        .wpcf7-response-output {
+            border: 0;
+            margin: 1.5rem 0 0 0;
+            padding: 0;
+            font-size: $fontsize5;
+        }
+    }
+}

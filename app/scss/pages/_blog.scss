@@ -1,0 +1,605 @@
+#blog_archive {
+	#cover {
+		position: relative;
+		padding: 4rem;
+		overflow: hidden;
+
+		@include media-breakpoint-down(md) {
+			padding: 2rem;
+		}
+
+		.back-box {
+			position: absolute;
+			top: -5rem;
+			right: -5rem;
+			left: -5rem;
+			bottom: -5rem;
+			content: "";
+			z-index: 1;
+
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+
+			img {
+				height: 100%;
+				width: 100%;
+				opacity: .5;
+				filter: blur(1.5rem);
+			}
+		}
+
+		.featured-box {
+			background-color: #fff;
+			box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .5);
+			display: flex;
+			padding: 0;
+			position: relative;
+
+
+			@include media-breakpoint-down(md) {
+				flex-wrap: wrap;
+			}
+
+
+
+			.left-col,
+			.right-col {
+				width: 50%;
+				position: relative;
+				z-index: 2;
+
+				@include media-breakpoint-down(md) {
+					width: 100%;
+				}
+			}
+
+			.left-col {
+				position: relative;
+				overflow: hidden;
+				margin: 0;
+
+				@include media-breakpoint-down(md) {
+					min-height: 15rem;
+				}
+
+				h1 {
+					top: 4rem;
+					left: 4rem;
+					color: white;
+					position: relative;
+					z-index: 2;
+				}
+
+				img {
+					min-height: 100%;
+					width: auto;
+					max-height: 100vh;
+					position: absolute;
+					top: 0;
+					left: 0;
+
+					@include media-breakpoint-down(md) {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+
+					}
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0, 0, 0, .2);
+					z-index: 1;
+				}
+			}
+
+			.right-col {
+				border-bottom: solid 2rem $pink;
+				background-color: #fafafa;
+
+				@include media-breakpoint-down(md) {
+					border-top: solid 2rem $pink;
+				}
+
+				.date-row {
+					border-bottom: solid .1rem grey;
+					padding: 2rem 4rem;
+					display: flex;
+					justify-content: space-between;
+
+					a {
+						color: $pink;
+						transition: all .3s ease-in-out;
+						text-decoration: underline;
+
+						&:hover {
+							text-decoration: none;
+							color: $blue;
+						}
+					}
+				}
+
+				.text-box {
+					padding: 8rem;
+					max-width: 75%;
+
+					@include media-breakpoint-down(xl) {
+						max-width: 100%;
+					}
+
+					@include media-breakpoint-down(md) {
+						padding: 3rem;
+					}
+
+					h2 {
+						margin-bottom: 4rem;
+					}
+
+					p {
+						margin-bottom: 3rem;
+					}
+
+					.button {
+						min-width: 20rem;
+						text-align: center;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+#recent-posts {
+	padding: 4rem 0;
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+
+	.margin-bottom {
+		margin-bottom: 4rem;
+	}
+
+	.center {
+		text-align: center;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+			color: $pink;
+
+			.post {
+				img {
+					width: 105%;
+				}
+			}
+		}
+	}
+
+	.margin-bottom {
+		margin-bottom: 4rem;
+	}
+
+	h2 {
+		margin-bottom: 5rem;
+	}
+
+	.post {
+		background-color: #fafafa;
+		box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .5);
+		height: 100%;
+		margin-bottom: 3rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+
+		.img-box {
+			width: 100%;
+			height: 15rem;
+			overflow: hidden;
+
+			img {
+				transition: all .5s ease-in-out;
+				position: relative;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				left: 50%;
+			}
+		}
+
+		h3,
+		p {
+			padding: 2rem;
+		}
+
+		.button-row {
+			display: flex;
+			align-items: center;
+
+			.button {
+				margin-left: auto;
+				margin-right: 2rem;
+			}
+		}
+	}
+}
+
+#single_blog_post {
+
+	.title-block {
+		padding: 12rem;
+		background-image: url('../images/background.jpg');
+		background-size: cover;
+		background-position: center;
+
+		@include media-breakpoint-down(md) {
+			padding: 5rem 2rem;
+		}
+
+		.date {
+			color: $white;
+		}
+
+		h1 {
+			@include font(5rem, 600, 1.5, $white);
+			margin-bottom: 2rem;
+		}
+	}
+
+	#post_content {
+		padding: 10rem 0;
+
+		@include media-breakpoint-down(lg) {
+			padding: 0 2rem 5rem;
+		}
+
+		.white-background {
+			background-color: white;
+		}
+
+		h1 {
+			margin-bottom: 2rem;
+		}
+
+		h2 {
+			margin-bottom: 2rem;
+		}
+
+		h3 {
+			margin-bottom: 2rem;
+		}
+
+		h4 {
+			margin-bottom: 2rem;
+		}
+
+		h5 {
+			margin-bottom: 2rem;
+		}
+
+		h6 {
+			margin-bottom: 2rem;
+		}
+
+		p {
+			margin-bottom: 3rem;
+		}
+
+		ul,
+		ol {
+			list-style: unset;
+			margin-bottom: 3rem;
+			margin-left: 4rem;
+
+			li {
+				padding-bottom: 1rem;
+			}
+		}
+
+
+
+
+
+		blockquote {
+			padding-left: 2rem;
+			border-left: solid;
+		}
+
+		a {
+
+			transition: .5s ease all;
+
+
+			&:hover {
+				color: darken($pink, 20%);
+			}
+
+			&.wp-block-button__link {
+				color: white;
+
+				&:hover {
+					color: white;
+				}
+
+				&.wp-block-button__link {
+					color: white;
+
+					&:hover {
+						color: white;
+					}
+				}
+			}
+		}
+
+
+		ol {
+			list-style: decimal;
+		}
+
+
+
+
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 3rem;
+
+		}
+
+		#post_sidebar {
+			padding: 2rem;
+			box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .5);
+			background-color: white;
+			margin-bottom: 3rem;
+
+			ul {
+				margin: 0;
+				list-style-type: none;
+				margin-bottom: 1rem;
+
+				li {
+					padding: 0;
+
+
+					a {
+						margin-bottom: 2rem;
+						display: inline-block;
+					}
+				}
+			}
+
+			h2 {
+				font-weight: 700;
+				color: $charcoal;
+				margin-bottom: 0;
+			}
+
+			h3 {
+				color: $pink;
+				margin-bottom: 0;
+			}
+
+			a {
+				color: $charcoal;
+				transition: all .3rem ease-in-out;
+				font-weight: 300;
+				padding: 0;
+				margin: 0;
+
+				&:hover {
+					color: $pink;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.cta-sidebar {
+			box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .5);
+
+			background-image: url('../images/Alpha Logo small.jpg');
+			background-position: bottom;
+			background-repeat: no-repeat;
+			background-size: contain;
+			padding: 3rem;
+			padding-bottom: 15rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			@include media-breakpoint-down(md) {
+				padding: 10rem 3rem;
+				background-image: url("../images/Alpha Logo light.jpg");
+			}
+
+			h3,
+			p {
+				color: $charcoal;
+				padding-bottom: 2rem;
+			}
+
+			a {
+				color: $white;
+				margin: auto;
+				font-weight: 300;
+			}
+
+
+		}
+
+		.image-repeater {
+			img {
+				margin-top: 3rem;
+			}
+		}
+
+		.tags-row {
+			padding: 2rem 0rem;
+			display: flex;
+			justify-content: space-between;
+
+			@include media-breakpoint-down(md) {
+				flex-direction: column;
+			}
+
+			a {
+				color: $pink;
+				transition: all .3s ease-in-out;
+				font-weight: 500;
+
+				&:hover {
+					text-decoration: none;
+					color: $blue;
+				}
+			}
+		}
+	}
+
+
+
+	#lastest_posts {
+		padding-top: 8rem;
+
+		h2 {
+			margin-bottom: 4rem;
+		}
+	}
+
+	.social_media {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		height: 100%;
+		margin: 0 3rem 3rem 0;
+		position: sticky;
+		top: 150px;
+		height: 40rem;
+		padding: 10rem 0;
+
+		a {
+			margin-bottom: 2rem;
+
+			svg {
+				fill: $charcoal;
+			}
+
+			&:hover {
+
+				svg {
+					fill: $pink;
+				}
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			height: unset;
+		}
+
+
+
+
+		@include media-breakpoint-down(lg) {
+			flex-direction: row;
+			min-width: 25%;
+			padding: 2rem 0;
+
+			a {
+				margin-right: 2rem;
+
+				svg {
+					fill: $charcoal;
+				}
+
+				&:hover {
+
+					svg {
+						fill: $pink;
+					}
+				}
+			}
+
+		}
+
+		.back {
+			margin-bottom: 5rem;
+			color: #dbdbdb;
+			transition: all .3s ease-in-out;
+
+
+			span {
+				color: $pink;
+			}
+
+			&:hover {
+				color: $pink;
+			}
+		}
+
+		.social-icon {
+			margin: 1rem 0;
+			display: flex;
+			align-items: flex-end;
+			transition: all .5s ease-in-out;
+
+
+			@include media-breakpoint-down(md) {
+				margin: 0 1rem;
+			}
+
+			span {
+				opacity: 0;
+				color: $pink;
+				transition: all .5s ease-in-out;
+				text-decoration: none;
+				margin-left: 2rem;
+
+				@include media-breakpoint-down(lg) {
+					display: none;
+				}
+			}
+
+			&:hover {
+				text-decoration: none;
+
+				path {
+					fill: $pink;
+				}
+
+				span {
+					opacity: 1;
+					text-decoration: none;
+					fill: $pink;
+
+					@include media-breakpoint-down(lg) {
+						display: none;
+					}
+				}
+			}
+
+			svg {
+				width: 3rem;
+
+				path {
+					fill: #ededed;
+					transition: all .3s ease-in-out;
+
+				}
+			}
+		}
+	}
+
+
+}

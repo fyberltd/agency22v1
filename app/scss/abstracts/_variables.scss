@@ -1,0 +1,50 @@
+/*colours*/
+
+$darkBlue: #163840;
+$lightBlue: #8CD2F1;
+$orange: #F7AE61;
+$pink: #F5A791;
+$white:#fafafa;
+$boxShadow: rgba(0, 0, 0, 0.25);
+$blue: #46B1D3;
+$green: #ACCA2C;
+$purple:#7d3c7d;
+$black:#000;
+$charcoal:#585757;
+$light-grey:#d9d8d9;
+$grey:#7b7b7b;
+$yellow:#F9C71B;
+$trasparent: rgba(0, 0, 0, 0);
+
+$colors:('darkBlue': #163840,
+    'lightBlue': #8CD2F1,
+    'orange': #F7AE61,
+    'pink': #F5A791,
+    'white':#fafafa,
+    'boxShadow': rgba(0, 0, 0, 0.25),
+    'blue': #46B1D3,
+    'green': #ACCA2C,
+    'purple':#7d3c7d,
+    'black':#000,
+    'charcoal':#585757,
+    'light-grey':#d9d8d9,
+    'grey':#7b7b7b,
+    'yellow':#F9C71B,
+    'trasparent': rgba(0, 0, 0, 0),
+);
+$fontsizeBase:1rem;
+$fontsize1:$fontsizeBase*3.9;
+$fontsize2:$fontsizeBase*2.7;
+$fontsize3:$fontsizeBase*1.999;
+$fontsize4:$fontsizeBase*1.414;
+$fontsize5:$fontsizeBase*0.707;
+$maxPadding:$fontsize1*2;
+
+$space:($maxPadding,
+    $fontsize1,
+    $fontsize2,
+    $fontsize3,
+    $fontsize4,
+    $fontsizeBase,
+    $fontsize5,
+)

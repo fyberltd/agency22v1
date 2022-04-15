@@ -1,0 +1,51 @@
+//lots of soacing classes based on the $space list in _variables
+
+//set index to create classeswith
+$i: 0;
+
+@each $spaceItem in $space {
+    $i: $i + 1;
+
+    // will create classes from p1,pt1,m1 etc to p6, pt6, m6 etc 
+    //p1 will have the most spacign and p6 will have the smallest. 
+    // e.g, .pl4 .pr4 will give the element padding-left: 1.4rem; padding-right: 1.4rem; but can be updated in the map
+    .p#{$i} {
+        padding-top: #{$spaceItem};
+    }
+
+    .pt#{$i} {
+        padding-top: #{$spaceItem};
+    }
+
+    .pl#{$i} {
+        padding-left: #{$spaceItem};
+    }
+
+    .pr#{$i} {
+        padding-right: #{$spaceItem};
+    }
+
+    .pb#{$i} {
+        padding-bottom: #{$spaceItem};
+    }
+
+    .m#{$i} {
+        margin-top: #{$spaceItem};
+    }
+
+    .mt#{$i} {
+        margin-top: #{$spaceItem};
+    }
+
+    .ml#{$i} {
+        margin-left: #{$spaceItem};
+    }
+
+    .mr#{$i} {
+        margin-right: #{$spaceItem};
+    }
+
+    .mb#{$i} {
+        margin-bottom: #{$spaceItem};
+    }
+}

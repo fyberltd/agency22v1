@@ -1,0 +1,139 @@
+.article {
+    display: flex;
+    flex-wrap: wrap;
+
+    .text-col {
+        width: 50%;
+        padding: 10rem;
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            padding: 7rem 3rem;
+        }
+
+        .text {
+
+            margin-left: auto;
+            max-width: 755px;
+
+            @include media-breakpoint-down(md) {
+                margin-right: auto;
+            }
+
+            .subtext {
+                color: $red;
+                font-weight: 700;
+                margin-bottom: 2rem;
+                padding-bottom: 0;
+            }
+
+            p {
+                padding-bottom: 3rem;
+            }
+        }
+    }
+
+    .image-col {
+
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            padding-bottom: 50%;
+        }
+    }
+}
+
+.custom-article {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .text-col {
+        max-width: 790px;
+        padding-right: 0;
+        margin-right: auto;
+        padding: 9rem;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        .subtext {
+            margin-bottom: 4rem;
+        }
+
+        @include media-breakpoint-down(xl) {}
+
+        @include media-breakpoint-down(lg) {
+            order: 2;
+            width: 100%;
+            padding: 10%;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: unset;
+
+            .text {
+                margin-right: auto;
+                margin-left: auto;
+
+            }
+        }
+    }
+
+    .image-col {
+        margin: 1%;
+        width: 47%;
+
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+            order: 1;
+            margin: 2%;
+            padding-bottom: 50%;
+        }
+
+    }
+
+    &:nth-of-type(2n) {
+        .text-col {
+            order: 1;
+            margin-right: 0;
+            margin-left: auto;
+
+            @include media-breakpoint-down(lg) {
+                order: 2;
+                width: 100%;
+                padding: 10%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+
+        .image-col {
+            order: 2;
+
+            @include media-breakpoint-down(lg) {
+                order: 1;
+                width: 100%;
+            }
+
+        }
+    }
+
+    &.red {
+        background-color: $red;
+        color: $white;
+
+        .subtext {
+            color: $white;
+        }
+
+        h2 {
+            color: $white;
+        }
+    }
+}

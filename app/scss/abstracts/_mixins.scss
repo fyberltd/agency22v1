@@ -1,0 +1,72 @@
+/* 
+	Font style mixin, if no family is defined it will default to sans-serif. 
+	To avoid using a parameter all together just pass null into the function.
+	Example: @include font(5rem, 800, 1, #fff); 
+*/
+@mixin font($fam: false, $size: false, $weight: false, $height: false, $colour: false) {
+	@if $fam==gothic {
+		font-family: all-round-gothic, sans-serif;
+	}
+
+	@else if $fam==sofia {
+		font-family: sofia-pro, sans-serif;
+	}
+
+	@if $size {
+		font-size: $size;
+	}
+
+	@if $weight {
+		font-weight: $weight;
+	}
+
+	@if $height {
+		line-height: $height;
+	}
+
+	@if $colour {
+		color: $colour;
+	}
+}
+
+/*
+	before and after mixin with default values
+	Example: @include pseudo('hello', block, absolute);
+	Example using defaults: @include pseudo; or @include pseudo('hello'); etc
+*/
+@mixin pseudo($content: '', $display: inline-block, $pos: relative) {
+	content: $content;
+	display: $display;
+	position: $pos;
+}
+
+/*
+	50-50 gradient mixin
+	Example: @include gradient(#07c, #06f, vertical);
+*/
+
+@mixin gradient($start-color, $end-color, $orientation) {
+	background: $start-color;
+
+	@if $orientation=='vertical' {
+		background: -webkit-linear-gradient(top, $start-color, $end-color);
+		background: linear-gradient(to bottom, $start-color, $end-color);
+	}
+
+	@else if $orientation=='horizontal' {
+		background: -webkit-linear-gradient(left, $start-color, $end-color);
+		background: linear-gradient(to right, $start-color, $end-color);
+	}
+
+	@else {
+		background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+		background: radial-gradient(ellipse at center, $start-color, $end-color);
+	}
+}
+
+@mixin background($size, $url) {
+	background-size: $size;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url($url);
+}

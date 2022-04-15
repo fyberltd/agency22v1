@@ -1,0 +1,83 @@
+.button {
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-radius: 0rem;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    position: relative;
+    border: solid 0.3rem $white;
+
+    &.white-text {
+        color: white;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    &.rounded {
+        border-radius: 3rem;
+    }
+
+    &:hover {
+        color: $black;
+        background-color: white;
+        text-decoration: none;
+    }
+}
+
+.wpcf7-submit {
+    display: inline-block;
+    padding: 1.3rem 3rem;
+    border-radius: 0rem;
+    @include font(gothic, 2rem, 600, 1, $black);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    position: relative;
+    border: solid 0.3rem $black;
+    background-color: white;
+
+    &:hover {
+        background-color: $black;
+
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+@each $key,
+$color in $colors {
+
+    .button-#{$key} {
+        color: white;
+        border: .1rem solid #{$color};
+        background-color: #{$color};
+    }
+
+    .button-#{$key}:hover {
+        color: #{$color};
+        background-color: white;
+
+    }
+
+
+    .button-#{$key}-inverse {
+        border: .1rem solid #{$color};
+        color: #{$color};
+        background-color: white;
+    }
+
+    .button-#{$key}-inverse:hover {
+        color: white;
+        background-color: #{$color};
+    }
+
+    .#{$key}-white-text {
+        color: white;
+
+        &:hover {
+            color: #{$color};
+        }
+    }
+}

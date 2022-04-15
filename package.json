@@ -1,0 +1,37 @@
+{
+  "name": "fyber_template_v3_base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fyber ltd",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cache-buster": "^0.2.1",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-error-handle": "latest",
+    "gulp-hash-src": "^0.1.6",
+    "gulp-htmlmin": "latest",
+    "gulp-install": "latest",
+    "gulp-js-minify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "latest",
+    "gulp-sequence": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-terser": "latest",
+    "run-sequence": "^2.2.1",
+    "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "gulp": "^4.0.2",
+    "gulp-inject-string": "^1.1.2"
+  },
+  "description": ""
+}

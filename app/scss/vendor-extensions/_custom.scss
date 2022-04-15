@@ -1,0 +1,23 @@
+/*Bootstrap overrides Copy variables from `_variables.scss` in node_modules to this file to override default values
+ without modifying source files.*/
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$grid-breakpoints:(
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1600px
+);
+
+$container-max-widths:(
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1540px,
+);
+ 

@@ -1,0 +1,67 @@
+#post_sidebar {
+	h2 {
+		margin-bottom: 2rem;
+	}
+
+	.sidebar_elements {
+		list-style-type: none;
+
+		.widget {
+			h3 {
+				font-size: $fontsizeBase;
+				margin-bottom: 1rem;
+			}
+
+			&.widget_categories {
+				margin-bottom: 2rem;
+
+				ul {
+					list-style-type: none;
+
+					li {
+						a {
+							font-size: $fontsize5;
+
+						}
+					}
+				}
+			}
+
+			&.widget_tag_cloud {
+				margin-bottom: 2rem;
+
+				.tagcloud {
+					a {
+						font-size: $fontsizeBase;
+
+						&:after {
+							content: ', ';
+						}
+
+						&:first-of-type {
+							font-weight: 800;
+						}
+
+						&:last-of-type() {
+							&:after {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+
+			&.widget_archive {
+				ul {
+					list-style-type: none;
+
+					li {
+						a {
+							font-size: $fontsize5;
+						}
+					}
+				}
+			}
+		}
+	}
+}

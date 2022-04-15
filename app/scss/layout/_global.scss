@@ -1,0 +1,106 @@
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.article {
+	display: flex;
+	flex-wrap: wrap;
+
+	.text-col {
+		width: 50%;
+		padding: 16rem 0rem;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
+
+		.text {
+			margin-left: auto;
+			max-width: 755px;
+
+			@include media-breakpoint-down(md) {
+				margin-right: auto;
+			}
+
+			p {
+				padding-bottom: 5rem;
+			}
+		}
+	}
+
+	.image-col {
+		width: 50%;
+		@include background(cover, '../images/digital_hero.png');
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			padding-bottom: 50%;
+		}
+	}
+}
+
+.blog_posts {
+	position: relative;
+
+	.post {
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			margin-bottom: 1rem;
+
+		}
+
+		h3 {
+			font-size: $fontsizeBase;
+			margin: 0;
+		}
+
+		.date {
+			font-size: $fontsize5;
+			margin-bottom: 1rem;
+		}
+
+		.excerpt {
+			font-size: $fontsize5;
+		}
+	}
+
+	.loading_icon {
+		position: absolute;
+		top: 0;
+		left: 1.5rem;
+		right: 1.5rem;
+		height: 100%;
+		background-color: #fff;
+		background-color: rgba(255, 255, 255, .5);
+		z-index: 10;
+		display: none;
+
+		&.loading {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		img {
+			width: 20rem;
+			height: 20rem;
+		}
+	}
+}
+
+.load_btn {
+	display: inline-block;
+	margin-top: 4rem;
+	font-size: $fontsizeBase;
+	background-color: blue;
+	padding: 0.5rem 3rem;
+	border-radius: 0.5rem;
+	color: white;
+}

@@ -1,0 +1,24 @@
+/*sticky footer styles using flexbox*/
+html {
+	height: 100%;
+}
+
+#wrapper {
+	position: relative;
+	transition: all 0.3s ease-in-out;
+
+
+
+	.header-spacing {
+		padding-top: 180px;
+		transition: all 0.5s ease-in-out;
+
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
+	}
+}
+
+.grecaptcha-badge {
+	visibility: hidden;
+}

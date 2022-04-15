@@ -1,0 +1,15 @@
+#blue-cta {
+    padding: 10rem;
+    background-color: $blue;
+
+    @include media-breakpoint-down(lg) {
+        padding: 5rem 2rem;
+    }
+
+    h2 {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        margin-bottom: 3rem;
+    }
+}
