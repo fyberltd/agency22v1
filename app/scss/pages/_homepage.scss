@@ -59,6 +59,31 @@
         color: white;
         text-align: center;
       }
+      &:hover {
+        cursor: none;
+        &.circle{
+          opacity: 1s;
+        }
+      }
+    }
+  }
+  .circle {
+    position: absolute;
+    background-color: #FAB935;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    pointer-events: none;
+    opacity:1;
+    transition: .25s ease all;
+    span {
+      color: white;
+      text-align: center;
+      font-weight: 700;
     }
   }
 }

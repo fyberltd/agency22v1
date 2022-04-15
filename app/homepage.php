@@ -8,32 +8,34 @@ get_header();
 
 <main id="home_page">
     <!-- Slider main container -->
-    <div class="swiper">
+    <div id="swiper" class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div id="digital" class="swiper-slide">
-                <a href="#" class="logo">
+            <a href="https://fyber.live" id="digital" class="swiper-slide">
+                <div class="logo">
                     <img src="<?php echo bloginfo('template_directory'); ?>/images/digital-logo.svg" alt="Fyber Digital logo">
-                </a>
+                </div>
                 <h3>Shaping brands for a digital world</h3>
-                <a href="" class="link">Visit Digital</a>
-            </div>
-            <div id="live" class="swiper-slide">
-                <a href="#" class="logo">
+            </a>
+            <a href="https://fyberdigital.co.uk" id="live" class="swiper-slide">
+                <div class="logo">
                     <img src="<?php echo bloginfo('template_directory'); ?>/images/live-logo.svg" alt="Fyber Live logo">
-                </a>
+                </div>
                 <h3>Ultimate brand experiences</h3>
-                <a href="" class="link">Visit Live</a>
-            </div>
-            <div id="direct" class="swiper-slide">
-                <a href="#" class="logo">
+            </a>
+            <a href="https://fyber.direct" id="direct" class="swiper-slide">
+                <div class="logo">
                     <img src="<?php echo bloginfo('template_directory'); ?>/images/direct-logo.svg" alt="Fyber Live logo">
-                </a>
+                </div>
                 <h3>Your message, delivered</h3>
-                <a href="" class="link">Visit Direct</a>
-            </div>
+            </a>
         </div>
+    </div>
+    <div id="circle" class="circle">
+        <span>
+        View
+        </span>
     </div>
 </main>
 
