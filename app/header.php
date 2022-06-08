@@ -30,7 +30,7 @@
 ?>
 
 <body <?php body_class() ?>>
-	<header id="header" class="<?php if (is_front_page()) {
+	<!-- <header id="header" class="<?php if (is_front_page()) {
 									echo 'homepage';
 								} ?>">
 
@@ -39,7 +39,7 @@
 				<img src="<?php echo bloginfo('template_directory'); ?>/images/agency-logo.svg" alt="logo">
 			</a>
 		</div>
-	</header>
+	</header> -->
 	<div class="ie-notice">
 		<div class="container">
 			<div class="row">
